@@ -3,7 +3,8 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[english]{babel}
-
+\usetheme{Antibes}
+\usepackage{tikz}
 
 
 
@@ -12,7 +13,27 @@
 \usefonttheme[onlymath]{serif}
 \setbeamertemplate{caption}[numbered]
 
-\title[Crisis]{Hardware and Software Development for MOSES II Flight Operations}
+\pgfdeclareimage[width=\paperwidth]{mybackground}{images/blue_sun.png}
+
+\setbeamertemplate{title page}{
+
+        \begin{picture}(0,0)
+
+            \put(-30,-163){%
+                \pgfuseimage{mybackground}
+            }
+
+            \put(0,-110.7){%
+                \begin{minipage}[b][45mm][t]{226mm}
+                    \usebeamerfont{title}{\inserttitle\par}
+                \end{minipage}
+            }
+
+            \end{picture}
+
+    }
+
+\title[...]{Hardware and Software Development for \\ MOSES II Flight Operations}
 \author[Smart, Mashburn]{Roy Smart \and Jackson Remington}
 \institute{Montana State University}
 \date{May 1st, 2015}
@@ -21,12 +42,61 @@
 	
 \begin{document}
 
-	\frame{\titlepage}
+	\begin{frame}[plain]
+	        \titlepage
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{MOSES Scientific Goals}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{First Launch}
+
+	\end{frame}
 
 	\begin{frame}
 		
 		\frametitle{System Requirements}
 
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Hardware Overview}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Flight Software}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Ground Station Software}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Capturing Data}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Data Retrieval}
+
+	\end{frame}
+	
+	\begin{frame}
+		
+		\frametitle{Next Launch}
 
 	\end{frame}
 	
