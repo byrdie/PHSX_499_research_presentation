@@ -13,6 +13,7 @@
 \usecolortheme{albatross}
 \usefonttheme[onlymath]{serif}
 \setbeamertemplate{caption}[numbered]
+\graphicspath{ {images/} }
 
 \pgfdeclareimage[width=\paperwidth]{mybackground}{images/blue_sun.png}
 \pgfdeclareimage[width=0.2\paperwidth]{rocket}{images/launch}
@@ -154,6 +155,39 @@
 	\begin{frame}
 		
 		\frametitle{Ground Station Software}
+		
+		\noindent
+		\begin{minipage}[t]{.5\textwidth}
+		  
+		  \begin{itemize}
+		  	\item{Server module}
+		  	\item{Client module}
+		  	\item{Grounded communication}
+		  	\begin{itemize}
+		  		\item{Serial console}
+		  		\item{Ethernet}
+		  	\end{itemize}
+		  	\item{In-flight communication}
+			\begin{itemize}
+		  		\item{Housekeeping Link Protocol (HLP)}
+		  		\item{Timers}
+		  		\item{High-speed telemetry}
+		  	\end{itemize}
+		  \end{itemize}
+		\end{minipage}
+		
+		\begin{minipage}[t]{.44\textwidth}
+		  
+		  \begin{figure}
+		  \includegraphics[width=\textwidth]{server_scr}
+		  \end{figure}
+		  \begin{figure}
+ 		  \includegraphics[width=\textwidth]{client_scr}
+ 		  \end{figure}
+		
+		\end{minipage}
+		
+		
 
 	\end{frame}
 	
