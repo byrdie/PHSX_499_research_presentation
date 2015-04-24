@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  22 APR 2015 20:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  23 APR 2015 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -769,6 +769,24 @@ File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 hs.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
+(/usr/share/texmf/tex/latex/beamer/base/multimedia/multimedia.sty
+Package: multimedia 2012/05/02 ver 0.02
+\mm@movie=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2014/01/03 v1.7j
+
+Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+\TP@textbox=\box56
+\TPHorizModule=\dimen199
+\TPVertModule=\dimen200
+\TP@margin=\dimen201
+\TP@absmargin=\dimen202
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen203
+\TP@tbargs=\toks44
+\TP@prevdepth=\dimen204
+)
 (/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemealbatross.
 sty
 Package: beamercolorthemealbatross 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -776,23 +794,43 @@ Package: beamercolorthemealbatross 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemeserif.sty
 Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 53.
+
 (./therm_present.aux)
 \openout1 = `therm_present.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -830,17 +868,17 @@ LaTeX Font Info:    ... okay on input line 43.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
-\scratchdimen=\dimen199
-\scratchbox=\box56
-\nofMPsegments=\count165
-\nofMParguments=\count166
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count167
-\MPscratchDim=\dimen200
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count165
+\scratchdimen=\dimen205
+\scratchbox=\box57
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen206
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -857,8 +895,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 43.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -866,11 +904,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count170
+\c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 
 (./therm_present.out) (./therm_present.out)
 \@outlinefile=\write5
@@ -901,33 +939,234 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 43.
+LaTeX Info: Redefining \includegraphics on input line 65.
  (./therm_present.nav)
-[1
+<images/moses_logo_with_text.pdf, id=17, 620.3175pt x 475.7775pt>
+File: images/moses_logo_with_text.pdf Graphic file (type pdf)
+
+<use images/moses_logo_with_text.pdf>
+Package pdftex.def Info: images/moses_logo_with_text.pdf used on input line 69.
+
+(pdftex.def)             Requested size: 56.9055pt x 43.64574pt.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/blue_sun.png (PNG
- copy)>]
+ copy)> <./images/moses_logo_with_text.pdf>] <images/exp2.png, id=53, 1027.84pt
+ x 513.92pt>
+File: images/exp2.png Graphic file (type png)
+ <use images/exp2.png>
+Package pdftex.def Info: images/exp2.png used on input line 92.
+(pdftex.def)             Requested size: 147.49782pt x 73.74406pt.
+Package epstopdf Info: Source file: <images/instrument.eps>
+(epstopdf)                    date: 2006-09-04 15:15:48
+(epstopdf)                    size: 17165 bytes
+(epstopdf)             Output file: <images/instrument-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-04-23 18:41:39
+(epstopdf)                    size: 4834 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/instrument-eps-conv
+erted-to.pdf images/instrument.eps>
+(epstopdf)             \includegraphics on input line 92.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/instrument-eps-converted-to.pdf, id=54, 746.79pt x 444.66125pt>
+File: images/instrument-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/instrument-eps-converted-to.pdf>
+Package pdftex.def Info: images/instrument-eps-converted-to.pdf used on input l
+ine 92.
+(pdftex.def)             Requested size: 147.49782pt x 87.82472pt.
+
+<images/nasa.png, id=55, 867.24pt x 721.0137pt>
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 92.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+
+<images/msu.pdf, id=57, 277.035pt x 193.72375pt>
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 92.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+
+<images/ssel.png, id=58, 229.3368pt x 85.2786pt>
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 92.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 53.
+(Font)              size <5> substituted on input line 92.
 
 [2
 
-] [3
+ <./images/nasa.png> <./images/msu.pdf> <./images/ssel.png> <./images/exp2.png>
+ <./images/instrument-eps-converted-to.pdf>]
+Overfull \hbox (23.90123pt too wide) in paragraph at lines 114--114
+[][][][]  
+ []
 
-] [4
+File: images/nasa.png Graphic file (type png)
+<use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 114.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [3
 
-] [5
+ <./images/launch.jpg>] <images/moses.png, id=128, 1499.6025pt x 464.73625pt>
+File: images/moses.png Graphic file (type png)
 
-] [6
+<use images/moses.png>
+Package pdftex.def Info: images/moses.png used on input line 122.
+(pdftex.def)             Requested size: 307.28987pt x 95.22899pt.
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 122.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 122.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
 
-] [7
+<use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 122.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [4
 
-] [8
+ <./images/moses.png>]
+<images/vdx104.jpg, id=157, 582.175pt x 602.25pt>
+File: images/vdx104.jpg Graphic file (type jpg)
+ <use images/vdx104.jpg>
+Package pdftex.def Info: images/vdx104.jpg used on input line 144.
+(pdftex.def)             Requested size: 92.1879pt x 95.36029pt.
 
-] [9
+<images/fpga.png, id=158, 970.62625pt x 983.675pt>
+File: images/fpga.png Graphic file (type png)
+ <use images/fpga.png>
+Package pdftex.def Info: images/fpga.png used on input line 144.
+(pdftex.def)             Requested size: 92.1879pt x 93.42007pt.
+File: images/nasa.png Graphic file (type png)
 
-] [10
+<use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 144.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 144.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 144.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [5
+
+ <./images/vdx104.jpg> <./images/fpga.png>]
+Package epstopdf Info: Source file: <images/mfsw_block.eps>
+(epstopdf)                    date: 2015-04-06 18:18:16
+(epstopdf)                    size: 100381 bytes
+(epstopdf)             Output file: <images/mfsw_block-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=images/mfsw_block-eps-conv
+erted-to.pdf images/mfsw_block.eps>
+(epstopdf)             \includegraphics on input line 152.
+runsystem(repstopdf --outfile=images/mfsw_block-eps-converted-to.pdf images/mfs
+w_block.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images/mfsw_block-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-04-23 18:55:55
+(epstopdf)                    size: 22602 bytes.
+
+<images/mfsw_block-eps-converted-to.pdf, id=185, 1232.605pt x 628.3475pt>
+File: images/mfsw_block-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/mfsw_block-eps-converted-to.pdf>
+Package pdftex.def Info: images/mfsw_block-eps-converted-to.pdf used on input l
+ine 152.
+(pdftex.def)             Requested size: 307.28987pt x 156.64545pt.
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 152.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+
+<use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 152.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 152.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [6
+
+ <./images/mfsw_block-eps-converted-to.pdf>]
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 158.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 158.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 158.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+
+[7
+
+]
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 164.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 164.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 164.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [8
+
+]
+File: images/nasa.png Graphic file (type png)
+
+<use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 170.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 170.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 170.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [9
+
+]
+File: images/nasa.png Graphic file (type png)
+
+<use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 176.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 176.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 176.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [10
 
 ]
 \tf@nav=\write6
@@ -939,11 +1178,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \tf@snm=\write8
 \openout8 = `therm_present.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
- (./therm_present.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+
+(./therm_present.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `therm_present.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -951,22 +1191,23 @@ Package rerunfilecheck Info: File `therm_present.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 18137 strings out of 493304
- 341750 string characters out of 6139871
- 426091 words of memory out of 5000000
- 21144 multiletter control sequences out of 15000+600000
+ 18405 strings out of 493304
+ 346815 string characters out of 6139871
+ 433323 words of memory out of 5000000
+ 21380 multiletter control sequences out of 15000+600000
  5152 words of font info for 19 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  55i,15n,73p,402b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on therm_present.pdf (10 pages, 50377913 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+Output written on therm_present.pdf (10 pages, 56227108 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
+ 342 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
  20 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
