@@ -10,7 +10,7 @@
 
 
 \usetheme{default}
-\usecolortheme{albatross}
+\usecolortheme{seahorse}
 \usefonttheme[onlymath]{serif}
 \setbeamertemplate{caption}[numbered]
 \graphicspath{ {images/} }
@@ -156,38 +156,34 @@
 		
 		\frametitle{Ground Station Software}
 		
-		\noindent
-		\begin{minipage}[t]{.5\textwidth}
-		  
-		  \begin{itemize}
-		  	\item{Server module}
-		  	\item{Client module}
-		  	\item{Grounded communication}
-		  	\begin{itemize}
-		  		\item{Serial console}
-		  		\item{Ethernet}
-		  	\end{itemize}
-		  	\item{In-flight communication}
-			\begin{itemize}
-		  		\item{Housekeeping Link Protocol (HLP)}
-		  		\item{Timers}
-		  		\item{High-speed telemetry}
-		  	\end{itemize}
-		  \end{itemize}
-		\end{minipage}
-		
-		\begin{minipage}[t]{.44\textwidth}
-		  
-		  \begin{figure}
-		  \includegraphics[width=\textwidth]{server_scr}
-		  \end{figure}
-		  \begin{figure}
- 		  \includegraphics[width=\textwidth]{client_scr}
- 		  \end{figure}
-		
-		\end{minipage}
-		
-		
+		\begin{columns}[T] % align columns
+		\begin{column}{.53\textwidth}
+
+			 \begin{itemize}
+						  	\item{Server module}
+						  	\item{Client module}
+						  	\item{Grounded communication}
+						  	\begin{itemize}
+						  		\item{Serial console}
+						  		\item{Ethernet}
+						  	\end{itemize}
+						  	\item{In-flight communication}
+							\begin{itemize}
+						  		\item{Housekeeping Link Protocol (HLP)}
+						  		\item{Timers}
+						  		\item{High-speed telemetry}
+						  	\end{itemize}
+			 \end{itemize}
+			
+		\end{column}%
+		\hfill%
+		\begin{column}{.45\textwidth}
+
+			\includegraphics[width=0.7\textwidth]{server_scr} \\
+			\includegraphics[width=\textwidth]{client_scr}
+					
+		\end{column}%
+		\end{columns}
 
 	\end{frame}
 	
@@ -200,12 +196,41 @@
 	\begin{frame}
 		
 		\frametitle{Data Retrieval}
+		
+		\begin{columns}[T] % align columns
+		\begin{column}{.49\textwidth}
+
+			\includegraphics[width=0.5\textwidth]{images/synclink} \\
+			\includegraphics[width=\textwidth]{images/desert}
+			
+		\end{column}%
+		\hfill%
+		\begin{column}{.49\textwidth}
+
+
+					
+		\end{column}%
+		\end{columns}
 
 	\end{frame}
 	
 	\begin{frame}
 		
 		\frametitle{Next Launch}
+		
+		\begin{columns}[T] % align columns
+		\begin{column}{.49\textwidth}
+
+			
+			
+		\end{column}%
+		\hfill%
+		\begin{column}{.49\textwidth}
+
+			\includegraphics[width=\textwidth]{images/high}
+					
+		\end{column}%
+		\end{columns}
 
 	\end{frame}
 	
