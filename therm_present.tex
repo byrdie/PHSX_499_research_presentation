@@ -7,7 +7,8 @@
 \usepackage{tikz}
 \usepackage{multimedia}
 \usepackage{textpos}
-
+\usepackage{hyperref}
+\usepackage{url}
 
 \usetheme{default}
 \usecolortheme{seahorse}
@@ -31,9 +32,9 @@
                 
                 	\centering
                
-                  {\usebeamerfont{title}\usebeamercolor{red}\inserttitle \par}
+                  {\usebeamerfont{title}\color{red}\inserttitle \par}
                   
-                  \insertauthor
+                  \color{red}\insertauthor
                   
                   \insertinstitute
                   
@@ -45,14 +46,20 @@
             }
 
             \end{picture}
+            
+            \begin{textblock*}{100mm}(-0.75cm,-3.5cm)
+            \includegraphics[width=2cm]{images/nasa}
+            \end{textblock*}
+
+            \begin{textblock*}{100mm}(0.90\textwidth,-3.75cm)
+            \includegraphics[width=2cm]{images/inverted_solar_physics_logo}
+            \end{textblock*}
 
     }
 
-\title[...]{Hardware and Software Development for \\ MOSES II Flight Operations}
-\author[Smart, Remington]{
-\includegraphics[width=2cm]{images/moses_logo_with_text} 
-\\ Roy Smart \and Jackson Remington}
-\institute{Montana State University}
+\title[...]{\includegraphics[width=2cm]{images/moses_logo_with_text}  \\Hardware and Software Development for \\ MOSES II Flight Operations}
+\author[Smart, Remington]{Roy Smart \and Jackson Remington}
+\institute{\includegraphics[width=2cm]{images/msu}}
 \date{May 1st, 2015 \\ }
 
 \addtobeamertemplate{frametitle}{}{%
@@ -106,7 +113,15 @@
 		\begin{column}{.78\textwidth}
 		
 			\begin{itemize}
-				\item hey!
+				\item MOSES first launched in February 8th, 2006 \cite{moses}.
+				\begin{itemize}
+					\item Utilized a Black Brant IX sounding rocket
+					\item Observed the Sun in He II 304 \AA
+					\item Identified a Transition Region Explosive Event.
+					\item Payload was retrieved with data intact.
+					\item Flight computer was damaged after launch. We hypothesize that it was damaged after splashdown into atmosphere.
+				\end{itemize}
+				
 			\end{itemize}
 		
 		\end{column}%
@@ -117,6 +132,27 @@
 	\begin{frame}
 	
 		\frametitle{System Requirements}
+		
+				\begin{columns}[T] % align columns
+				\begin{column}{.49\textwidth}
+					\begin{itemize}
+						\item Data characteristics
+						\begin{itemize}
+							\item MOSES captures the sun in three spectral orders $m=-1,0,1$.
+							\item Each spectral order is captured by CCDs at $2048 \times 1024$ resolution.	
+						\end{itemize}
+					\end{itemize}
+					
+				\end{column}%
+				\hfill%
+				\begin{column}{.49\textwidth}
+				
+					\begin{itemize}
+						\item
+					\end{itemize}
+				
+				\end{column}%
+				\end{columns}
 		
 		\includegraphics[width=\textwidth]{images/moses}
 
@@ -190,6 +226,20 @@
 	\begin{frame}
 		
 		\frametitle{Capturing Data}
+		
+		\begin{columns}[T] % align columns
+		\begin{column}{.49\textwidth}
+
+			\includegraphics[width=\textwidth]{images/selftest_plus} \\
+			\includegraphics[width=\textwidth]{images/stims_zero}
+			
+		\end{column}%
+		\hfill%
+		\begin{column}{.49\textwidth}
+		
+		\end{column}%
+		\end{columns}
+		
 
 	\end{frame}
 	
@@ -232,6 +282,13 @@
 		\end{column}%
 		\end{columns}
 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{References}
+		
+		\bibliographystyle{unsrt}
+		\bibliography{sources}
 	\end{frame}
 	
 \end{document}
