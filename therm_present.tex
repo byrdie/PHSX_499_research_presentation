@@ -85,6 +85,9 @@
 
 			\begin{itemize}
 				\item hey!
+				\item Extreme Ultraviolet Wavelengths (EUV):
+				\item UV absorption by Ozone ($O_{3}$) \cite{uv_abs}.
+				\item $\sim300$-second image window
 			\end{itemize}
 			
 		\end{column}%
@@ -104,24 +107,28 @@
 		\frametitle{First Launch}
 		
 		\begin{columns}[T] % align columns
-		\begin{column}{.20\textwidth}
+		\begin{column}{.15\textwidth}
 
 			\movie[width=3cm,height=7cm,poster,externalviewer]{\pgfuseimage{rocket}}{images/Launch.mp4}
 			
 		\end{column}%
 		\hfill%
-		\begin{column}{.78\textwidth}
+		\begin{column}{.83\textwidth}
 		
 			\begin{itemize}
-				\item MOSES first launched in February 8th, 2006 \cite{moses}.
+				\item MOSES first launched on February 8th, 2006 \cite{moses}.
 				\begin{itemize}
 					\item Utilized a Black Brant IX sounding rocket
 					\item Observed the Sun in He II 304 \AA
 					\item Identified a Transition Region Explosive Event.
-					\item Payload was retrieved with data intact.
-					\item Flight computer was damaged after launch. We hypothesize that it was damaged after splashdown into atmosphere.
+					\item Hercules EBX flight computer was damaged after launch. We hypothesize that this occurred upon splashdown into atmosphere.
 				\end{itemize}
-				
+				\item MOSES II
+				\begin{itemize}
+					\item Following the first operation, the MOSES research group planned to try again with updated optics.
+					\item Necessitated replacing the malfunctioning flight computer. Unfortunately the Hercules board used for the first flight is no longer available.
+					\item New flight computer was to be developed to act as a drop-in replacement for the old system.
+				\end{itemize}
 			\end{itemize}
 		
 		\end{column}%
@@ -139,7 +146,8 @@
 						\item Data characteristics
 						\begin{itemize}
 							\item MOSES captures the sun in three spectral orders $m=-1,0,1$.
-							\item Each spectral order is captured by CCDs at $2048 \times 1024$ resolution.	
+							\item Each spectral order is captured by CCDs at $2048 \times 1024$ resolution.
+								
 						\end{itemize}
 					\end{itemize}
 					
@@ -148,7 +156,11 @@
 				\begin{column}{.49\textwidth}
 				
 					\begin{itemize}
-						\item
+						\item Challenges
+						\begin{itemize}
+							\item Short flight time, FC must be fast enough to prevent bottlenecks.
+							\item Camera data is presented as 32 Mbit/s 16-bit parallel data.
+						\end{itemize}
 					\end{itemize}
 				
 				\end{column}%
@@ -165,8 +177,23 @@
 		\begin{columns}[T] % align columns
 		\begin{column}{.68\textwidth}
 
-
-			
+			\begin{itemize}
+				\item Originally attempted to replace the Hercules EBX with the TS-7600 embedded system.
+				\begin{itemize}
+					\item Found that the FPGA implementation was too slow to keep up with the data rate.
+				\end{itemize}
+				\item VDX104+ Flight Computer
+				\begin{itemize}
+					\item Moderates communications between the ground, cameras, and FPGA.
+					\item Executes flight software we developed.
+				\end{itemize}
+				\item Connecttech PCI104 FPGA
+				\begin{itemize}
+					\item Captures parallel data produced by cameras and transfers it back to VDX FC.
+				\end{itemize}
+					
+			\end{itemize}
+		
 		\end{column}%
 		\hfill%
 		\begin{column}{.30\textwidth}
@@ -196,19 +223,19 @@
 		\begin{column}{.53\textwidth}
 
 			 \begin{itemize}
-						  	\item{Server module}
-						  	\item{Client module}
-						  	\item{Grounded communication}
-						  	\begin{itemize}
-						  		\item{Serial console}
-						  		\item{Ethernet}
-						  	\end{itemize}
-						  	\item{In-flight communication}
-							\begin{itemize}
-						  		\item{Housekeeping Link Protocol (HLP)}
-						  		\item{Timers}
-						  		\item{High-speed telemetry}
-						  	\end{itemize}
+				  	\item{Server module}
+				  	\item{Client module}
+				  	\item{Grounded communication}
+				  	\begin{itemize}
+				  		\item{Serial console}
+				  		\item{Ethernet}
+				  	\end{itemize}
+				  	\item{In-flight communication}
+					\begin{itemize}
+				  		\item{Housekeeping Link Protocol (HLP)}
+				  		\item{Timers}
+				  		\item{High-speed telemetry}
+				  	\end{itemize}
 			 \end{itemize}
 			
 		\end{column}%
@@ -237,6 +264,11 @@
 		\hfill%
 		\begin{column}{.49\textwidth}
 		
+			\begin{itemize}
+		  		\item STIM(S)
+		  		\item ReadOut Electronics (ROE) shown to be functional
+		  	\end{itemize}
+		
 		\end{column}%
 		\end{columns}
 		
@@ -257,7 +289,12 @@
 		\hfill%
 		\begin{column}{.49\textwidth}
 
-
+			\begin{itemize}
+				\item High-Speed Telemetry
+				\item Synclink implementation
+				\item Pre-Mod Filter
+				\item Groundstation Laptop / IDL image view
+		  	\end{itemize}
 					
 		\end{column}%
 		\end{columns}
@@ -271,7 +308,13 @@
 		\begin{columns}[T] % align columns
 		\begin{column}{.49\textwidth}
 
-			
+			\begin{itemize}
+				\item Scheduled for launch: August 17(27?)
+				\item Horizontal test in progress
+				\begin{itemize}
+					\item Interaction/control over other payload components
+				\end{itemize}
+			\end{itemize}			
 			
 		\end{column}%
 		\hfill%
