@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  30 APR 2015 19:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  1 MAY 2015 07:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,13 +1332,7 @@ ine 78.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/blue_sun.png (PNG
  copy)> <./images/moses_logo_with_text.pdf> <./images/msu.pdf> <./images/nasa.p
-ng> <./images/inverted_solar_physics_logo.png>] <images/exp2.png, id=62, 1027.8
-4pt x 513.92pt>
-File: images/exp2.png Graphic file (type png)
-
-<use images/exp2.png>
-Package pdftex.def Info: images/exp2.png used on input line 108.
-(pdftex.def)             Requested size: 147.49782pt x 73.74406pt.
+ng> <./images/inverted_solar_physics_logo.png>]
 Package epstopdf Info: Source file: <images/instrument.eps>
 (epstopdf)                    date: 2006-09-04 15:15:48
 (epstopdf)                    size: 17165 bytes
@@ -1347,140 +1341,156 @@ Package epstopdf Info: Source file: <images/instrument.eps>
 (epstopdf)                    size: 4834 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/instrument-eps-conv
 erted-to.pdf images/instrument.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/instrument-eps-converted-to.pdf, id=63, 746.79pt x 444.66125pt>
+<images/instrument-eps-converted-to.pdf, id=62, 746.79pt x 444.66125pt>
 File: images/instrument-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/instrument-eps-converted-to.pdf>
 Package pdftex.def Info: images/instrument-eps-converted-to.pdf used on input l
-ine 108.
+ine 109.
 (pdftex.def)             Requested size: 147.49782pt x 87.82472pt.
+
+<images/inversion.png, id=63, 1255.69125pt x 784.9325pt>
+File: images/inversion.png Graphic file (type png)
+
+<use images/inversion.png>
+Package pdftex.def Info: images/inversion.png used on input line 109.
+(pdftex.def)             Requested size: 147.49782pt x 92.19963pt.
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 108.
+Package pdftex.def Info: images/nasa.png used on input line 109.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
-
-<use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 108.
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 109.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
- <images/ssel.png, id=64, 229.3368pt x 85.2786pt>
-File: images/ssel.png Graphic file (type png)
 
-<use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 108.
+<images/ssel.png, id=64, 229.3368pt x 85.2786pt>
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 109.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 108.
+(Font)              size <5> substituted on input line 109.
 
 [2
 
- <./images/ssel.png> <./images/exp2.png> <./images/instrument-eps-converted-to.
-pdf>]
-Overfull \hbox (39.26666pt too wide) in paragraph at lines 141--141
+ <./images/ssel.png> <./images/instrument-eps-converted-to.pdf> <./images/inver
+sion.png>]
+Overfull \hbox (39.26666pt too wide) in paragraph at lines 143--143
 [][][][]  
  []
 
+<images/exp2.png, id=110, 1027.84pt x 513.92pt>
+File: images/exp2.png Graphic file (type png)
+ <use images/exp2.png>
+Package pdftex.def Info: images/exp2.png used on input line 143.
+(pdftex.def)             Requested size: 178.53502pt x 89.26294pt.
 File: images/nasa.png Graphic file (type png)
+
 <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 141.
+Package pdftex.def Info: images/nasa.png used on input line 143.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 141.
+Package pdftex.def Info: images/msu.pdf used on input line 143.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
  <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 141.
+Package pdftex.def Info: images/ssel.png used on input line 143.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
- [3
 
- <./images/launch.jpg>] <images/moses.png, id=138, 1499.6025pt x 464.73625pt>
+Overfull \vbox (8.26031pt too high) detected at line 143
+ []
+
+[3
+
+ <./images/launch.jpg> <./images/exp2.png>]
+<images/moses.png, id=139, 1499.6025pt x 464.73625pt>
 File: images/moses.png Graphic file (type png)
-
-<use images/moses.png>
-Package pdftex.def Info: images/moses.png used on input line 174.
+ <use images/moses.png>
+Package pdftex.def Info: images/moses.png used on input line 176.
 (pdftex.def)             Requested size: 307.28987pt x 95.22899pt.
 File: images/nasa.png Graphic file (type png)
- <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 174.
+
+<use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 176.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 174.
+Package pdftex.def Info: images/msu.pdf used on input line 176.
+(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
+File: images/ssel.png Graphic file (type png)
+ <use images/ssel.png>
+Package pdftex.def Info: images/ssel.png used on input line 176.
+(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
+ [4
+
+ <./images/moses.png>] <images/vdx104.jpg, id=168, 582.175pt x 602.25pt>
+File: images/vdx104.jpg Graphic file (type jpg)
+
+<use images/vdx104.jpg>
+Package pdftex.def Info: images/vdx104.jpg used on input line 214.
+(pdftex.def)             Requested size: 92.1879pt x 95.36029pt.
+ <images/fpga.png, id=169, 970.62625pt x 983.675pt>
+File: images/fpga.png Graphic file (type png)
+
+<use images/fpga.png>
+Package pdftex.def Info: images/fpga.png used on input line 214.
+(pdftex.def)             Requested size: 92.1879pt x 93.42007pt.
+File: images/nasa.png Graphic file (type png)
+ <use images/nasa.png>
+Package pdftex.def Info: images/nasa.png used on input line 214.
+(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
+File: images/msu.pdf Graphic file (type pdf)
+ <use images/msu.pdf>
+Package pdftex.def Info: images/msu.pdf used on input line 214.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 174.
-(pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
- [4
-
- <./images/moses.png>]
-<images/vdx104.jpg, id=167, 582.175pt x 602.25pt>
-File: images/vdx104.jpg Graphic file (type jpg)
- <use images/vdx104.jpg>
-Package pdftex.def Info: images/vdx104.jpg used on input line 212.
-(pdftex.def)             Requested size: 92.1879pt x 95.36029pt.
-
-<images/fpga.png, id=168, 970.62625pt x 983.675pt>
-File: images/fpga.png Graphic file (type png)
- <use images/fpga.png>
-Package pdftex.def Info: images/fpga.png used on input line 212.
-(pdftex.def)             Requested size: 92.1879pt x 93.42007pt.
-File: images/nasa.png Graphic file (type png)
-
-<use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 212.
-(pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
-File: images/msu.pdf Graphic file (type pdf)
- <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 212.
-(pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
-File: images/ssel.png Graphic file (type png)
- <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 212.
+Package pdftex.def Info: images/ssel.png used on input line 214.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
  [5
 
  <./images/vdx104.jpg> <./images/fpga.png>]
-<images/ubuntu-logo.png, id=195, 516.21428pt x 533.76556pt>
+<images/ubuntu-logo.png, id=196, 516.21428pt x 533.76556pt>
 File: images/ubuntu-logo.png Graphic file (type png)
 
 <use images/ubuntu-logo.png>
-Package pdftex.def Info: images/ubuntu-logo.png used on input line 249.
+Package pdftex.def Info: images/ubuntu-logo.png used on input line 251.
 (pdftex.def)             Requested size: 82.5487pt x 85.35826pt.
- <images/c.png, id=196, 642.4pt x 682.55pt>
+ <images/c.png, id=197, 642.4pt x 682.55pt>
 File: images/c.png Graphic file (type png)
 
 <use images/c.png>
-Package pdftex.def Info: images/c.png used on input line 249.
+Package pdftex.def Info: images/c.png used on input line 251.
 (pdftex.def)             Requested size: 80.32921pt x 85.35826pt.
- <images/java.jpg, id=197, 3011.25pt x 2128.95375pt>
+ <images/java.jpg, id=198, 3011.25pt x 2128.95375pt>
 File: images/java.jpg Graphic file (type jpg)
 
 <use images/java.jpg>
-Package pdftex.def Info: images/java.jpg used on input line 249.
+Package pdftex.def Info: images/java.jpg used on input line 251.
 (pdftex.def)             Requested size: 120.70517pt x 85.35826pt.
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 249.
+Package pdftex.def Info: images/nasa.png used on input line 251.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 249.
+Package pdftex.def Info: images/msu.pdf used on input line 251.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 249.
+Package pdftex.def Info: images/ssel.png used on input line 251.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
 
-Overfull \vbox (3.80008pt too high) detected at line 249
+Overfull \vbox (3.80008pt too high) detected at line 251
  []
 
 [6
@@ -1494,163 +1504,163 @@ Package epstopdf Info: Source file: <images/mfsw_block.eps>
 (epstopdf)                    size: 22602 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/mfsw_block-eps-conv
 erted-to.pdf images/mfsw_block.eps>
-(epstopdf)             \includegraphics on input line 285.
+(epstopdf)             \includegraphics on input line 287.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/mfsw_block-eps-converted-to.pdf, id=226, 1232.605pt x 628.3475pt>
+<images/mfsw_block-eps-converted-to.pdf, id=227, 1232.605pt x 628.3475pt>
 File: images/mfsw_block-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/mfsw_block-eps-converted-to.pdf>
 Package pdftex.def Info: images/mfsw_block-eps-converted-to.pdf used on input l
-ine 285.
+ine 287.
 (pdftex.def)             Requested size: 202.04439pt x 208.23456pt.
 
-Overfull \hbox (17.6686pt too wide) in paragraph at lines 285--285
+Overfull \hbox (17.6686pt too wide) in paragraph at lines 287--287
 [][]  
  []
 
 File: images/nasa.png Graphic file (type png)
 <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 285.
+Package pdftex.def Info: images/nasa.png used on input line 287.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 285.
+Package pdftex.def Info: images/msu.pdf used on input line 287.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
  <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 285.
+Package pdftex.def Info: images/ssel.png used on input line 287.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
 
-Overfull \vbox (0.98193pt too high) detected at line 285
+Overfull \vbox (0.98193pt too high) detected at line 287
  []
 
 [7
 
  <./images/mfsw_block-eps-converted-to.pdf>]
-<images/server_scr.png, id=264, 702.625pt x 599.23875pt>
+<images/server_scr.png, id=265, 702.625pt x 599.23875pt>
 File: images/server_scr.png Graphic file (type png)
 
 <use images/server_scr.png>
-Package pdftex.def Info: images/server_scr.png used on input line 320.
+Package pdftex.def Info: images/server_scr.png used on input line 322.
 (pdftex.def)             Requested size: 96.79521pt x 82.54874pt.
 
-<images/client_scr.png, id=265, 1418.29875pt x 1023.825pt>
+<images/client_scr.png, id=266, 1418.29875pt x 1023.825pt>
 File: images/client_scr.png Graphic file (type png)
 
 <use images/client_scr.png>
-Package pdftex.def Info: images/client_scr.png used on input line 320.
+Package pdftex.def Info: images/client_scr.png used on input line 322.
 (pdftex.def)             Requested size: 138.2795pt x 99.8108pt.
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 320.
+Package pdftex.def Info: images/nasa.png used on input line 322.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 320.
+Package pdftex.def Info: images/msu.pdf used on input line 322.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 320.
+Package pdftex.def Info: images/ssel.png used on input line 322.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
  [8
 
  <./images/server_scr.png> <./images/client_scr.png>]
-<images/stim_minus.png, id=293, 2069.7325pt x 1063.975pt>
+<images/stim_minus.png, id=294, 2069.7325pt x 1063.975pt>
 File: images/stim_minus.png Graphic file (type png)
 
 <use images/stim_minus.png>
-Package pdftex.def Info: images/stim_minus.png used on input line 360.
+Package pdftex.def Info: images/stim_minus.png used on input line 362.
 (pdftex.def)             Requested size: 150.57372pt x 77.3919pt.
 
-<images/dark_minus.png, id=294, 2069.7325pt x 1063.975pt>
+<images/dark_minus.png, id=295, 2069.7325pt x 1063.975pt>
 File: images/dark_minus.png Graphic file (type png)
 
 <use images/dark_minus.png>
-Package pdftex.def Info: images/dark_minus.png used on input line 360.
+Package pdftex.def Info: images/dark_minus.png used on input line 362.
 (pdftex.def)             Requested size: 150.57372pt x 77.3919pt.
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 360.
+Package pdftex.def Info: images/nasa.png used on input line 362.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 360.
+Package pdftex.def Info: images/msu.pdf used on input line 362.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 360.
+Package pdftex.def Info: images/ssel.png used on input line 362.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
  [9
 
  <./images/stim_minus.png> <./images/dark_minus.png>]
-<images/synclink.jpg, id=323, 1013.7875pt x 702.625pt>
+<images/synclink.jpg, id=324, 1013.7875pt x 702.625pt>
 File: images/synclink.jpg Graphic file (type jpg)
 
 <use images/synclink.jpg>
-Package pdftex.def Info: images/synclink.jpg used on input line 400.
+Package pdftex.def Info: images/synclink.jpg used on input line 402.
 (pdftex.def)             Requested size: 90.34514pt x 62.61168pt.
- <images/desert.jpg, id=324, 1156.32pt x 770.88pt>
+ <images/desert.jpg, id=325, 1156.32pt x 770.88pt>
 File: images/desert.jpg Graphic file (type jpg)
 
 <use images/desert.jpg>
-Package pdftex.def Info: images/desert.jpg used on input line 400.
+Package pdftex.def Info: images/desert.jpg used on input line 402.
 (pdftex.def)             Requested size: 135.51541pt x 90.33728pt.
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 400.
+Package pdftex.def Info: images/nasa.png used on input line 402.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 400.
+Package pdftex.def Info: images/msu.pdf used on input line 402.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 400.
+Package pdftex.def Info: images/ssel.png used on input line 402.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
 
-Overfull \vbox (5.94633pt too high) detected at line 400
+Overfull \vbox (5.94633pt too high) detected at line 402
  []
 
 [10
 
  <./images/synclink.jpg> <./images/desert.jpg>]
-<images/high.JPG, id=351, 1023.825pt x 1365.1pt>
+<images/high.JPG, id=352, 1023.825pt x 1365.1pt>
 File: images/high.JPG Graphic file (type jpg)
  <use images/high.JPG>
-Package pdftex.def Info: images/high.JPG used on input line 430.
+Package pdftex.def Info: images/high.JPG used on input line 432.
 (pdftex.def)             Requested size: 150.57372pt x 200.75685pt.
 File: images/nasa.png Graphic file (type png)
 
 <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 430.
+Package pdftex.def Info: images/nasa.png used on input line 432.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 430.
+Package pdftex.def Info: images/msu.pdf used on input line 432.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
  <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 430.
+Package pdftex.def Info: images/ssel.png used on input line 432.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
  [11
 
  <./images/high.JPG>] (./therm_present.bbl)
 File: images/nasa.png Graphic file (type png)
  <use images/nasa.png>
-Package pdftex.def Info: images/nasa.png used on input line 439.
+Package pdftex.def Info: images/nasa.png used on input line 443.
 (pdftex.def)             Requested size: 56.9055pt x 47.3076pt.
 File: images/msu.pdf Graphic file (type pdf)
  <use images/msu.pdf>
-Package pdftex.def Info: images/msu.pdf used on input line 439.
+Package pdftex.def Info: images/msu.pdf used on input line 443.
 (pdftex.def)             Requested size: 56.9055pt x 39.79047pt.
 File: images/ssel.png Graphic file (type png)
 
 <use images/ssel.png>
-Package pdftex.def Info: images/ssel.png used on input line 439.
+Package pdftex.def Info: images/ssel.png used on input line 443.
 (pdftex.def)             Requested size: 56.9055pt x 21.15953pt.
  [12
 
@@ -1664,11 +1674,11 @@ Package pdftex.def Info: images/ssel.png used on input line 439.
 \tf@snm=\write8
 \openout8 = `therm_present.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 445.
  (./therm_present.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 445.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 445.
 Package rerunfilecheck Info: File `therm_present.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1676,13 +1686,13 @@ Package rerunfilecheck Info: File `therm_present.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 441.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
  ) 
 Here is how much of TeX's memory you used:
- 26353 strings out of 493304
- 538035 string characters out of 6139871
- 578540 words of memory out of 5000000
- 29192 multiletter control sequences out of 15000+600000
+ 26358 strings out of 493304
+ 538147 string characters out of 6139871
+ 578543 words of memory out of 5000000
+ 29196 multiletter control sequences out of 15000+600000
  11454 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  55i,15n,53p,10405b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1697,10 +1707,10 @@ lic/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt10.pfb>
-Output written on therm_present.pdf (12 pages, 61476079 bytes).
+Output written on therm_present.pdf (12 pages, 26111647 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
+ 458 PDF objects out of 1000 (max. 8388607)
  377 compressed objects within 4 object streams
  25 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
