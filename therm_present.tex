@@ -1,4 +1,4 @@
-\documentclass[landscape,xcolor={table}]{beamer}
+\documentclass[landscape,xcolor={table},10pt]{beamer}
 
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -9,6 +9,7 @@
 \usepackage{textpos}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{siunitx}
 
 \usetheme{default}
 \usecolortheme{seahorse}
@@ -57,7 +58,7 @@
 
     }
 
-\title[...]{\includegraphics[width=2cm]{images/moses_logo_with_text}  \\Hardware and Software Development for \\ MOSES II Flight Operations}
+\title[...]{\includegraphics[width=2cm]{images/moses_logo_with_text}  \\Command and Data Handling for \\ MOSES II Flight Operations}
 \author[Smart, Remington]{Roy Smart \and Jackson Remington}
 \institute{\includegraphics[width=2cm]{images/msu}}
 \date{May 1st, 2015 \\ }
@@ -84,10 +85,14 @@
 		\begin{column}{.48\textwidth}
 
 			\begin{itemize}
-				\item hey!
-				\item Extreme Ultraviolet Wavelengths (EUV):
-				\item UV absorption by Ozone ($O_{3}$) \cite{uv_abs}.
-				\item $\sim300$-second image window
+				\item Transition region Explosive Events (EEs)
+				\item Extreme UltraViolet wavelengths (EUV)
+				\begin{itemize}
+					\item Each of the three orders $(m=-1,0,+1)$ are dispersed by multilayer diffraction grating
+					\item Observes Ne VII (465\AA) and C III (459\AA) spectral lines 
+				\end{itemize}				
+				\item Atmospheric absorption of EUV requires space-based observations.
+				\item Sounding rocket provides $\sim300$-seconds above 160km.
 			\end{itemize}
 			
 		\end{column}%
@@ -121,12 +126,11 @@
 					\item Utilized a Black Brant IX sounding rocket
 					\item Observed the Sun in He II 304 \AA
 					\item Identified a Transition Region Explosive Event.
-					\item Hercules EBX flight computer was damaged after launch. We hypothesize that this occurred upon splashdown into atmosphere.
 				\end{itemize}
 				\item MOSES II
 				\begin{itemize}
-					\item Following the first operation, the MOSES research group planned to try again with updated optics.
-					\item Necessitated replacing the malfunctioning flight computer. Unfortunately the Hercules board used for the first flight is no longer available.
+					\item Following the first operation, the MOSES research group planned to try again with updated opticsfor 465 \AA.
+					\item Since the previous launch the Hercules flight computer has failed, and a exact replacement is no longer available.
 					\item New flight computer was to be developed to act as a drop-in replacement for the old system.
 				\end{itemize}
 			\end{itemize}
@@ -137,7 +141,6 @@
 	\end{frame}
 		
 	\begin{frame}
-	
 		\frametitle{System Requirements}
 		
 				\begin{columns}[T] % align columns
@@ -158,8 +161,8 @@
 					\begin{itemize}
 						\item Challenges
 						\begin{itemize}
-							\item Short flight time, FC must be fast enough to prevent bottlenecks.
-							\item Camera data is presented as 32 Mbit/s 16-bit parallel data.
+							\item Short flight time, FC must be responsive enough to capture real-time data.
+							\item Camera data is presented as 32 Mbit/s unbuffered 16-bit parallel data.
 						\end{itemize}
 					\end{itemize}
 				
@@ -178,18 +181,19 @@
 		\begin{column}{.68\textwidth}
 
 			\begin{itemize}
-				\item Originally attempted to replace the Hercules EBX with the TS-7600 embedded system.
+				\item Originally planned to replace the Hercules EBX with the TS-7600 embedded system.
 				\begin{itemize}
 					\item Found that the FPGA implementation was too slow to keep up with the data rate.
 				\end{itemize}
-				\item VDX104+ Flight Computer
+				\item VDX104+ Flight Computer (Upper)
 				\begin{itemize}
 					\item Moderates communications between the ground, cameras, and FPGA.
-					\item Executes flight software we developed.
+					\item Executes custom flight software.
 				\end{itemize}
-				\item Connecttech PCI104 FPGA
+				\item Connecttech PCI104 FPGA (Lower)
 				\begin{itemize}
-					\item Captures parallel data produced by cameras and transfers it back to VDX FC.
+					\item Captures parallel data produced by cameras and saves it to a buffer.
+					\item Data buffer is copied to the VDX104+ via Direct Memory Access (DMA).
 				\end{itemize}
 					
 			\end{itemize}
@@ -208,34 +212,99 @@
 	\end{frame}
 	
 	\begin{frame}
+		\frametitle{Software Enviroment}
+		
+				\begin{columns}[T] % align columns
+				\begin{column}{.49\textwidth}
+					\begin{itemize}
+						\item VDX104+ Flight Computer
+						\begin{itemize}
+							\item Ubuntu 10.04 GNU/Linux operating system with custom kernel.
+							\item Flight Software written in the C programming language.
+							\item Synclink and ConnectTech software drivers for interfacing with hardware.
+						\end{itemize}
+					\end{itemize}
+				
+				\end{column}%
+				\hfill%
+				\begin{column}{.49\textwidth}
+					\begin{itemize}
+						\item Ground Station Computer
+						\begin{itemize}
+							\item Ubuntu 14.04 GNU/Linux OS
+							\item Ground station software written in Java.
+							\item High-Speed Telemetry software written in the C programming language.
+						\end{itemize}
+					\end{itemize}
+							
+				\end{column}%
+				\end{columns}
+				\begin{center}
+					\includegraphics[height=3cm]{ubuntu-logo}
+					\includegraphics[height=3cm]{c}
+					\includegraphics[height=3cm]{java}
+				\end{center}
+
+		
+	\end{frame}
+	
+	\begin{frame}
 		
 		\frametitle{Flight Software}
 		
-		\includegraphics[width=\textwidth]{images/mfsw_block}
+		\begin{columns}[T] % align columns
+		\begin{column}{.60\textwidth}
+			\includegraphics[height=0.85\textheight,clip=true,trim=420 20 220 0]{images/mfsw_block}
+		\end{column}%
+		\hfill%
+		\begin{column}{.39\textwidth}
+			\leftmargini=10pt
+			\begin{itemize}
+				\item Organized into eight concurrent threads for real-time IO.
+				\item Main Thread
+				\begin{itemize}
+					\item Initializes all child threads
+				\end{itemize}
+				\item Science Timeline Thread
+				\begin{itemize}
+					\item Executes exposure sequences
+					\item Informs FPGA Server of impending images
+				\end{itemize}
+				\item FPGA Server Thread
+				\begin{itemize}
+					\item Waits for HW interrupts indicating Timers
+					\item Initiates DMA transfer once image is ready
+				\end{itemize}
+			\end{itemize}
+					
+		\end{column}%
+		\end{columns}
+		
+
 
 	\end{frame}
 	
 	\begin{frame}
 		
-		\frametitle{Ground Station Software}
+		\frametitle{Ground Station}
 		
 		\begin{columns}[T] % align columns
 		\begin{column}{.53\textwidth}
 
 			 \begin{itemize}
-				  	\item{Server module}
-				  	\item{Client module}
-				  	\item{Grounded communication}
+				  	\item{Server module: mediates communications between client and payload.}
+				  	\item{Client module: transmits Housekeeping Link Protocol (HLP) packets to server via ethernet.}				  	
+				  	\item{Debugging communication}
 				  	\begin{itemize}
 				  		\item{Serial console}
 				  		\item{Ethernet}
 				  	\end{itemize}
-				  	\item{In-flight communication}
+				  	\item{Main in-flight communication}
 					\begin{itemize}
-				  		\item{Housekeeping Link Protocol (HLP)}
-				  		\item{Timers}
-				  		\item{High-speed telemetry}
+				  		\item{Pre-defined Timers}
+				  		\item{Uplink push-button switches}
 				  	\end{itemize}
+				  	
 			 \end{itemize}
 			
 		\end{column}%
@@ -256,17 +325,32 @@
 		
 		\begin{columns}[T] % align columns
 		\begin{column}{.49\textwidth}
+	
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{images/stim_minus} \\
+				\includegraphics[width=\textwidth]{images/dark_minus}
+				\caption{STIMS test image (upper) and a dark exposure (lower).}
+			\end{figure}
 
-			\includegraphics[width=\textwidth]{images/selftest_plus} \\
-			\includegraphics[width=\textwidth]{images/stims_zero}
 			
 		\end{column}%
 		\hfill%
-		\begin{column}{.49\textwidth}
+		\begin{column}{.50\textwidth}
 		
 			\begin{itemize}
-		  		\item STIM(S)
-		  		\item ReadOut Electronics (ROE) shown to be functional
+
+		  		\item ReadOut Electronics (ROE)
+				\begin{itemize}
+			  		\item Each CCD pixel reports 14-bit value proportional to total photons detected over exposure time. 
+			  		\item FPGA captures these pixel-maps in three 2-megapixel images
+			  	\end{itemize}
+		  		\item Flight Software
+				\begin{itemize}
+			  		\item Opens and closes shutter.
+			  		\item Commands ROE to transmit data after exposure complete.
+			  		\item Copies data from FPGA to disk.
+			  	\end{itemize}
 		  	\end{itemize}
 		
 		\end{column}%
@@ -281,19 +365,33 @@
 		
 		\begin{columns}[T] % align columns
 		\begin{column}{.49\textwidth}
-
-			\includegraphics[width=0.5\textwidth]{images/synclink} \\
-			\includegraphics[width=\textwidth]{images/desert}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.6\textwidth]{images/synclink}\\
+				\includegraphics[width=0.9\textwidth]{images/desert}
+				\caption{Synclink USB Adapter (above) and MOSES I after landing at WSMR (below)}
+			\end{figure}
 			
 		\end{column}%
 		\hfill%
 		\begin{column}{.49\textwidth}
 
 			\begin{itemize}
-				\item High-Speed Telemetry
-				\item Synclink implementation
-				\item Pre-Mod Filter
-				\item Groundstation Laptop / IDL image view
+				\item Data is recovered off of SD card after landing.
+				\item High-Speed Telemetry at 10 Mbit/s.
+				\begin{itemize}
+					\item Provided as backup in the event the payload is not recovered.
+			  		\item 10.1 s per image.
+			  		\item Each image takes $> \SI{5}{s}$.
+			  	\end{itemize}				
+				\item Synclink USB Adapter
+				\begin{itemize}
+					\item Transmitting and receiving units.
+				\end{itemize}
+				\item Groundstation Laptop
+				\begin{itemize}
+					\item receiveTM program with IDL image viewer.
+				\end{itemize}
 		  	\end{itemize}
 					
 		\end{column}%
@@ -309,11 +407,15 @@
 		\begin{column}{.49\textwidth}
 
 			\begin{itemize}
-				\item Scheduled for launch: August 17(27?)
-				\item Horizontal test in progress
+				\item Scheduled for launch August 20th.
+				\item Horizontal test
 				\begin{itemize}
-					\item Interaction/control over other payload components
+					\item Proving control and functionality over other payload components.
+					\item Successful STIMS and dark exposure test confirms ROE functionality.
+					\item Shutter and other subsystems have yet to be tested.
 				\end{itemize}
+				\item Flight model still needs to be completed.
+				\item System must undergo thermal and vibrational testing.
 			\end{itemize}			
 			
 		\end{column}%
@@ -328,10 +430,12 @@
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{References}
+		\frametitle{References and Acknowledgements}
 		
 		\bibliographystyle{unsrt}
 		\bibliography{sources}
+		
+		This work is supported by NASA grant NNX14AK71G.
 	\end{frame}
 	
 \end{document}
